@@ -13,7 +13,7 @@ int main() {
 	// void display();
 	connorsBook.display(); // display() will operate on the invoking object connorsBook
 	
-	Book hp1("Sorcerer's Stone", "JKR", 250);
+	Book hp1;
 	/*hp1.title = "Sorcerer's Stone";
 	hp1.author = "JKR";
 	hp1.numPages = 250;
