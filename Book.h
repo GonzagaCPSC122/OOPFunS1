@@ -22,6 +22,22 @@ class Book {
 		int numPages;
 	public:
 		// public means accessible anywhere
+		// a constructor is a special member function that creates objects by initializing member attribute values (and other things...)
+		// c++ always has a default constructor for every class that does nothing
+		// constructors have no return type...
+		// they can have 0 or more arguments/parameters
+		// a constructor with 0 arguments is called the default value constructor (DVC)
+		Book(); // prototype for DVC
+		// can overload constructors to accept arguments
+		// explicit value constructor (EVC)
+		Book(string, string, int); // EVC prototype
+		// can have multiple EVCs!! same rules as function overloading
+		// a destructor is a special member function that is called when an object is about to be destroyed (AKA destructed AKA deallocated)
+		// what should a destructor do?
+		// free/release any resources (e.g. close files) free/deallocate any dynamically allocated memory
+		// no return type, no arguments, no overloading... there is only one desctructor
+		~Book(); // destructor prototype
+		
 		// member functions
 		void display();
 		// getters (AKA accessors)

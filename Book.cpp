@@ -1,5 +1,27 @@
 #include "Book.h"
 
+// DVC 
+Book::Book() {
+	// initialize our member values to be logical zero values for this type
+	title = "***";
+	author = "@@@@";
+	numPages = 0;
+}
+
+// EVC
+Book::Book(string t, string a, int n) {
+	title = t;
+	author = a;
+	numPages = n;
+}
+
+// destructor
+Book::~Book() {
+	// should free resources and memory
+	// Book doesn't have anything to release..
+	cout << "Hello from Book's destructor" << endl;
+}
+
 // :: scope resolution operator
 // and it defines membership of this function to the class Book
 void Book::display() {
