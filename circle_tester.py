@@ -21,7 +21,7 @@ class Point:
 class Circle:
     """Represents a simple circle.
     """
-    def __init__(self, radius: float = 1.0, center: Point = None) -> None:
+    def __init__(self, radius: float = 1.0, center: Point | None = None) -> None:
         self._radius = radius
         if center is None:
             center = Point()

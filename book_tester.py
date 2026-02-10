@@ -1,4 +1,5 @@
 import copy
+from typing import Any
 
 class Book:
     """Represents a library book.
@@ -11,7 +12,7 @@ class Book:
         str_rep = f"{self.title} is checked out: {self.checked_out}"
         return str_rep
     
-    def __eq__(self, other: object) -> bool:
+    def __eq__(self, other: Any) -> bool:
         # we get to define how two Books are compared for equality
         # two books are equal if they have the same title
         return self.title == other.title
